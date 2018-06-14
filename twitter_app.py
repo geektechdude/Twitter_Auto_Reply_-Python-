@@ -76,7 +76,7 @@ for result in results:
     else:
         twitter_handle = '@' + screen_name
         message = twitter_handle + " " + random.choice(rand_message)
-        #twitter.update_status(status=message, in_reply_to_status_id=id)
+        twitter.update_status(status=message, in_reply_to_status_id=id)
         print("Tweeted: %s" % message)
         id = int(id)
         ids_replied_to.append(id)
